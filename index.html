@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mouli Dharan — UI/UX Designer & Product Designer</title>
+  <meta name="description" content="Portfolio of Mouli Dharan, a UI/UX Designer & Product Designer turning confusing journeys into intuitive interfaces people trust." />
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="style.css" />
+  <!-- Smooth scrolling library -->
+  <script src="lenis.min.js"></script>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loader" class="loader">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
+      <div class="loader-text">Loading Experience <span id="load-progress">0%</span></div>
+      <div class="progress-bar-track">
+        <div id="progress-bar-fill" class="progress-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Scroll Animation Canvas -->
+  <div class="canvas-wrapper">
+    <canvas id="scroll-canvas"></canvas>
+  </div>
+
+  <!-- Content Layer Overlay (100% Transparent Backgrounds) -->
+  <div class="content-wrapper">
+    
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-brand">Mouli Dharan</a>
+        <nav class="nav-links">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#work" class="nav-link">Projects</a>
+          <a href="#explorations" class="nav-link">Explorations</a>
+          <a href="#process" class="nav-link">Process</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#timeline" class="nav-link">Timeline</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <a href="#contact" class="btn-pill btn-primary">
+          <span>Get in touch</span>
+          <span class="btn-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </header>
+
+    <!-- 1. Hero Section (Starts with closed eyes at rest, opens on scroll) -->
+    <section id="home" class="hero-section">
+      <div class="section-container hero-container">
+        
+        <!-- Hero Top Grid -->
+        <div class="hero-main-grid">
+          <div class="hero-left">
+            <div class="hero-tagline-wrap">
+              <span class="status-pulse"></span>
+              <span class="hero-tagline">Hey, I'm Mouli Dharan</span>
+            </div>
+            <h1 class="hero-title">
+              UI/UX Designer &<br />Product Designer
+            </h1>
+          </div>
+          
+          <div class="hero-right">
+            <h2 class="hero-quote">I design the moment a user stops feeling lost in your product.</h2>
+            <p class="hero-subtext">
+              Transforming complex systems, high-friction journeys, and enterprise applications into interfaces people trust and love.
+            </p>
+          </div>
+        </div>
+
+        <!-- Hero Bottom Discipline Grid -->
+        <div class="disciplines-grid">
+          <div class="discipline-card">
+            <span class="disc-num">#01</span>
+            <h3 class="disc-title">Find The Friction</h3>
+            <p class="disc-sub">Research & User Journeys</p>
+          </div>
+          <div class="discipline-card">
+            <span class="disc-num">#02</span>
+            <h3 class="disc-title">Wireframe The Logic</h3>
+            <p class="disc-sub">Information Architecture</p>
+          </div>
+          <div class="discipline-card">
+            <span class="disc-num">#03</span>
+            <h3 class="disc-title">Design Systems</h3>
+            <p class="disc-sub">Figma, UI Kits & Components</p>
+          </div>
+          <div class="discipline-card">
+            <span class="disc-num">#04</span>
+            <h3 class="disc-title">Front-End & Handoff</h3>
+            <p class="disc-sub">HTML5, React & Dev Specs</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. Impact & Organizations Bar -->
+    <section class="brands-section">
+      <div class="section-container brands-container">
+        <div class="brands-label">
+          Experience & <br />Collaboration
+        </div>
+        <div class="brands-list">
+          <div class="brand-item">
+            <span class="brand-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </span>
+            <span class="brand-name">Vision Bitz</span>
+          </div>
+
+          <div class="brand-item">
+            <span class="brand-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9"></circle>
+              </svg>
+            </span>
+            <span class="brand-name">Cognizant</span>
+          </div>
+
+          <div class="brand-item">
+            <span class="brand-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 3a9 9 0 0 0 0 18v-18z" fill="currentColor"></path>
+                <circle cx="12" cy="12" r="9"></circle>
+              </svg>
+            </span>
+            <span class="brand-name">IDM Tech Park</span>
+          </div>
+
+          <!-- <div class="brand-item">
+            <span class="brand-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 3 12 12 19 21 5 21 12 12 5 3"></polygon>
+              </svg>
+            </span>
+            <span class="brand-name">DevBitz</span>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Selected Projects (With View Project Buttons) -->
+    <section id="work" class="projects-section">
+      <div class="section-container">
+        
+        <!-- Section Header Split -->
+        <div class="projects-header-grid">
+          <div class="projects-header-left">
+            <span class="section-category">Selected Projects</span>
+            <h2 class="section-title">
+              Crafting Digital Products End-to-End
+            </h2>
+          </div>
+          
+          <div class="projects-header-right">
+            <p class="section-lead">
+              A curated selection of high-impact product designs, SaaS dashboards, mobile apps, and design systems from concept to delivery.
+            </p>
+            
+            <div class="cta-banner-row">
+              <span class="cta-banner-text">
+                Looking for a UI/UX Designer?<br />Let's create meaningful digital experiences.
+              </span>
+              <!-- <a href="#contact" class="btn-pill btn-primary">
+                <span>Get in touch</span>
+                <span class="btn-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span> -->
+                <a href="Mouli_Dharan_Master_Resume_ATS_2page.pdf" download class="btn-pill btn-primary">
+                <span>Download Resume</span>
+                <span class="btn-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6-Card Projects Grid -->
+        <div class="projects-grid">
+          
+          <!-- Project 1: Vision Bitz 2.0 -->
+          <div class="project-card">
+            <div class="card-image-wrap">
+              <img src="assets/vss.png" alt="Vision Bitz 2.0 Company Website Redesign" loading="lazy" />
+              <div class="card-overlay">
+                <div class="card-meta">
+                  <div class="card-tag-row">
+                    <span class="card-tag">Brand & Web Redesign</span>
+                  </div>
+                  <h4 class="card-title">Vision Bitz 2.0</h4>
+                  <p class="card-desc">Redesigned complete company website with responsive design system, user flows, and high-fidelity Figma prototypes.</p>
+                  <div class="card-action-wrap">
+                    <a href="https://www.behance.net/gallery/256636307/Vision-Bitz-20-Website-for-a-Tech-Solutions-Company" target="_blank" rel="noopener" class="btn-view-project">
+                      <span>View project</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: School ERP System -->
+          <div class="project-card">
+            <div class="card-image-wrap">
+              <img src="assets/school.png" alt="School ERP System Dashboard UI/UX" loading="lazy" />
+              <div class="card-overlay">
+                <div class="card-meta">
+                  <div class="card-tag-row">
+                    <span class="card-tag">Enterprise SaaS</span>
+                  </div>
+                  <h4 class="card-title">School ERP System</h4>
+                  <p class="card-desc">Designed complete multi-module ERP architecture, complex workflows, data tables, and reusable UI components.</p>
+                  <div class="card-action-wrap">
+                    <a href="https://www.behance.net/gallery/256562359/School-Management-ERP-Product-Design" target="_blank" rel="noopener" class="btn-view-project">
+                      <span>View project</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Upzy Jobs -->
+          <div class="project-card">
+            <div class="card-image-wrap">
+              <img src="assets/upzy (1).png" alt="Upzy Jobs Mobile Application Design" loading="lazy" />
+              <div class="card-overlay">
+                <div class="card-meta">
+                  <div class="card-tag-row">
+                    <span class="card-tag">Mobile Application</span>
+                  </div>
+                  <h4 class="card-title">Upzy Jobs App</h4>
+                  <p class="card-desc">Led primary design for job-seeker mobile app with candidate flows, search filters, and interaction patterns.</p>
+                  <div class="card-action-wrap">
+                    <a href="https://www.behance.net/gallery/256445407/Upzy-Jobs-End-to-End-Hiring-App" target="_blank" rel="noopener" class="btn-view-project">
+                      <span>View project</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: VETSSREACH -->
+          <div class="project-card">
+            <div class="card-image-wrap">
+              <img src="assets/Gemini_Generated_Image_5xwms45xwms45xwm (1).png "alt="VETSSREACH Veterinary Healthcare Application" loading="lazy" />
+              <div class="card-overlay">
+                <div class="card-meta">
+                  <div class="card-tag-row">
+                    <span class="card-tag">Healthcare & Veterinary</span>
+                  </div>
+                  <h4 class="card-title">VETSSREACH</h4>
+                  <p class="card-desc">Evaluated user journeys, emergency workflows, and navigation to optimize critical pet medical response time.</p>
+                  <div class="card-action-wrap">
+                    <a href="https://www.behance.net/gallery/252948865/Vetssreach-pet-care-app-UIUX-Case-Study" target="_blank" rel="noopener" class="btn-view-project">
+                      <span>View project</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: DigiYatra -->
+          <div class="project-card">
+            <div class="card-image-wrap">
+              <img src="assets/digiyatra.png" alt="DigiYatra Airport Redesign" loading="lazy" />
+              <div class="card-overlay">
+                <div class="card-meta">
+                  <div class="card-tag-row">
+                    <span class="card-tag">Product & UX Redesign</span>
+                  </div>
+                  <h4 class="card-title">DigiYatra Redesign</h4>
+                  <p class="card-desc">Redesigned passenger onboarding and error-handling experiences for frictionless airport biometric transit.</p>
+                  <div class="card-action-wrap">
+                    <a href="https://www.behance.net/gallery/248591959/DIGIYATRA-app-Redesign-UI-Redesign-and-Case-study" target="_blank" rel="noopener" class="btn-view-project">
+                      <span>View project</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Freelance Web Projects -->
+          <div class="project-card">
+            <div class="card-image-wrap">
+              <img src="assets/chitfund.png" alt="Chit Fund Website" loading="lazy" />
+              <div class="card-overlay">
+                <div class="card-meta">
+                  <div class="card-tag-row">
+                    <span class="card-tag">Web UI & E-Commerce</span>
+                  </div>
+                  <h4 class="card-title">Chit Fund website</h4>
+                  <p class="card-desc">Built full financial UI architecture for chit fund company and modern thrift-inspired e-commerce dress storefront.</p>
+                  <div class="card-action-wrap">
+                    <a href="https://www.behance.net/gallery/256563751/SGrow-Chit-Fund-Website-UIUX-Design" target="_blank" rel="noopener" class="btn-view-project">
+                      <span>View project</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+             <div class="project-card">
+            <div class="card-image-wrap">
+              <img src="assets/thrdeye.png" alt="Thrift E-Commerce Dress Shop Website" loading="lazy" />
+              <div class="card-overlay">
+                <div class="card-meta">
+                  <div class="card-tag-row">
+                    <span class="card-tag">Web UI & E-Commerce</span>
+                  </div>
+                  <h4 class="card-title">Thrift E-Commerce Dress Shop</h4>
+                  <p class="card-desc">Built full financial UI architecture for chit fund company and modern thrift-inspired e-commerce dress storefront.</p>
+                  <div class="card-action-wrap">
+                    <a href="https://www.behance.net/gallery/256565081/THRD-Eye-Fashions-Fashion-Website-Homepage" target="_blank" rel="noopener" class="btn-view-project">
+                      <span>View project</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="project-card">
+            <div class="card-image-wrap">
+              <img src="assets/airpd.png" alt="AirPods product concept" loading="lazy" />
+              <div class="card-overlay">
+                <div class="card-meta">
+                  <div class="card-tag-row">
+                    <span class="card-tag">Web UI & E-Commerce</span>
+                  </div>
+                  <h4 class="card-title">AirPods product concept </h4>
+                  <p class="card-desc">A product-page exploration focused on scroll-based storytelling for a hero hardware object.</p>
+                  <div class="card-action-wrap">
+                    <a href="https://www.behance.net/gallery/249901025/AirPods-Product-Site-Landing-page" target="_blank" rel="noopener" class="btn-view-project">
+                      <span>View project</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="project-card">
+            <div class="card-image-wrap">
+              <img src="assets/northface.png" alt="Brand identity" loading="lazy" />
+              <div class="card-overlay">
+                <div class="card-meta">
+                  <div class="card-tag-row">
+                    <span class="card-tag">Brand identity</span>
+                  </div>
+                  <h4 class="card-title">The North Face — brand identity</h4>
+                  <p class="card-desc">Exploration of brand identity and visual language for The North Face.</p>
+                  <div class="card-action-wrap">
+                    <a href="https://www.behance.net/gallery/248592451/The-North-Face-Brand-Identity-Redesign-UIUX-Case-Study" target="_blank" rel="noopener" class="btn-view-project">
+                      <span>View project</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. "Selected Explorations" / Experiments & Craft Section -->
+    <section id="explorations" class="explorations-section">
+      <div class="section-container">
+        
+        <div class="section-eyebrow-wrap">
+          <span class="section-dash"></span>
+          <span class="section-eyebrow">EXPERIMENTS & CRAFT</span>
+        </div>
+
+        <h2 class="section-heading-lg">Selected Explorations</h2>
+        <p class="section-subtext-lg">
+          A collection of concept designs, UI challenges, and visual explorations created to experiment with different interaction patterns, interfaces, and design styles while continuously refining my craft.
+        </p>
+
+        <div class="explorations-grid">
+          
+          <!-- Item 01: AirPods Product Concept -->
+          <!-- <div class="exploration-card">
+            <span class="exp-num">01</span>
+            <h3 class="exp-title">AirPods product concept</h3>
+            <p class="exp-desc">
+              A product-page exploration focused on scroll-based storytelling for a hero hardware object.
+            </p>
+            <div class="exp-tags-row">
+              <span class="exp-tag">Web</span>
+              <span class="exp-tag">Motion</span>
+              <a href="https://www.behance.net/gallery/249901025/AirPods-Product-Site-Landing-page" target="_blank" rel="noopener" class="exp-link">
+                View project ↗
+              </a>
+            </div>
+          </div> -->
+
+          <!-- Item 02: The North Face
+          <div class="exploration-card">
+            <span class="exp-num">02</span>
+            <h3 class="exp-title">The North Face — brand identity</h3>
+            <p class="exp-desc">
+              An identity exploration translating an outdoor, rugged brand into clean digital components.
+            </p>
+            <div class="exp-tags-row">
+              <span class="exp-tag">Branding</span>
+              <span class="exp-tag">UI</span>
+              <a href="https://behance.net/shivamoulidhar1" target="_blank" rel="noopener" class="exp-link">
+                View project ↗
+              </a>
+            </div>
+          </div> -->
+
+          <!-- Item 03: Lead-gen Sofa Landing Page -->
+          <div class="exploration-card">
+            <span class="exp-num">03</span>
+            <h3 class="exp-title">Lead-gen sofa landing page</h3>
+            <p class="exp-desc">
+              Hand-built with HTML, CSS and Bootstrap — a conversion-focused landing page for a furniture lead-gen funnel.
+            </p>
+            <div class="exp-tags-row">
+              <span class="exp-tag">HTML/CSS</span>
+              <span class="exp-tag">Bootstrap</span>
+              <a href="https://moulidharan-30.github.io/Lead-gen/" target="_blank" rel="noopener" class="exp-link">
+                View project ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 04: Yedzi Bike Site -->
+          <div class="exploration-card">
+            <span class="exp-num">04</span>
+            <h3 class="exp-title">Yedzi bike site</h3>
+            <p class="exp-desc">
+              A hand-coded marketing site exploring bold typography and product photography for a motorbike brand.
+            </p>
+            <div class="exp-tags-row">
+              <span class="exp-tag">HTML/CSS</span>
+              <span class="exp-tag">Front-end</span>
+              <a href="https://moulidharan-30.github.io/Yedzi/" target="_blank" rel="noopener" class="exp-link">
+                View project ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 05: Paramount Pictures Concept -->
+          <div class="exploration-card">
+            <span class="exp-num">05</span>
+            <h3 class="exp-title">Paramount Pictures — concept site</h3>
+            <p class="exp-desc">
+              A cinematic concept build exploring dark, high-contrast layouts and studio-style presentation.
+            </p>
+            <div class="exp-tags-row">
+              <span class="exp-tag">Concept</span>
+              <span class="exp-tag">Front-end</span>
+              <a href="https://moulidharan-30.github.io/Paramount-pictures/" target="_blank" rel="noopener" class="exp-link">
+                View project ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 06: Interaction & Micro-Motions
+          <div class="exploration-card">
+            <span class="exp-num">06</span>
+            <h3 class="exp-title">Tactile Interactions & Craft</h3>
+            <p class="exp-desc">
+              Experiments with smooth gesture feedback, sub-pixel animations, and interactive component state machines.
+            </p>
+            <div class="exp-tags-row">
+              <span class="exp-tag">Motion</span>
+              <span class="exp-tag">Design Systems</span>
+              <a href="https://github.com/Moulidharan-30" target="_blank" rel="noopener" class="exp-link">
+                View project ↗
+              </a>
+            </div>
+          </div> -->
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. "How I Work" / Process Section -->
+    <section id="process" class="process-section">
+      <div class="section-container">
+        
+        <div class="section-eyebrow-wrap">
+          <span class="section-dash"></span>
+          <span class="section-eyebrow">HOW I WORK</span>
+        </div>
+
+        <h2 class="section-heading-lg">From problem to<br />shipped decision</h2>
+        <p class="section-subtext-lg">
+          A real, repeatable sequence — not a poster. This is the order I actually move through on every project.
+        </p>
+
+        <div class="process-list">
+          
+          <div class="process-item">
+            <span class="process-num">01</span>
+            <div class="process-title-box">
+              <h3 class="process-name">Find the friction</h3>
+            </div>
+            <div class="process-desc-box">
+              <p>Start with a real complaint, not a brief — mine, a user's, or a stakeholder's. I write down exactly where someone gets stuck before I open Figma.</p>
+            </div>
+          </div>
+
+          <div class="process-item">
+            <span class="process-num">02</span>
+            <div class="process-title-box">
+              <h3 class="process-name">Research the gap</h3>
+            </div>
+            <div class="process-desc-box">
+              <p>Competitor teardown, secondary research, existing support tickets — whatever's fastest to get real signal. I'd rather have three sharp data points than ten vague ones.</p>
+            </div>
+          </div>
+
+          <div class="process-item">
+            <span class="process-num">03</span>
+            <div class="process-title-box">
+              <h3 class="process-name">Sketch wide, then narrow</h3>
+            </div>
+            <div class="process-desc-box">
+              <p>Paper first. I force myself through several structurally different layouts before touching a design tool, so the first idea isn't the only idea.</p>
+            </div>
+          </div>
+
+          <div class="process-item">
+            <span class="process-num">04</span>
+            <div class="process-title-box">
+              <h3 class="process-name">Wireframe the logic</h3>
+            </div>
+            <div class="process-desc-box">
+              <p>Low-fidelity screens focused purely on hierarchy and flow — no color, no distraction — so decisions get made on structure, not polish.</p>
+            </div>
+          </div>
+
+          <div class="process-item">
+            <span class="process-num">05</span>
+            <div class="process-title-box">
+              <h3 class="process-name">Design the interface</h3>
+            </div>
+            <div class="process-desc-box">
+              <p>High-fidelity UI, built as reusable components. Every screen has to justify its own existence against the friction from step one.</p>
+            </div>
+          </div>
+
+          <div class="process-item">
+            <span class="process-num">06</span>
+            <div class="process-title-box">
+              <h3 class="process-name">Pressure-test & ship</h3>
+            </div>
+            <div class="process-desc-box">
+              <p>Walk it through with fresh eyes, cut what doesn't earn its place, and hand off developer-ready specs — I can build the front end myself when needed.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. Core Competencies & Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="section-container">
+        
+        <div class="section-eyebrow-wrap">
+          <span class="section-dash"></span>
+          <span class="section-eyebrow">CORE COMPETENCIES</span>
+        </div>
+
+        <h2 class="section-heading-lg">Tools & Skills<br />I Build With</h2>
+        <p class="section-subtext-lg">
+          Combining human-centered UX research, scalable design systems, AI tools, and front-end engineering.
+        </p>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: UI/UX Design & Research -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 20h9"></path>
+                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">UI/UX & Product Design</h3>
+            </div>
+            <div class="skill-tags-wrap">
+              <span class="skill-tag">User Research</span>
+              <span class="skill-tag">Information Architecture</span>
+              <span class="skill-tag">User Flows</span>
+              <span class="skill-tag">Wireframing</span>
+              <span class="skill-tag">Interactive Prototyping</span>
+              <span class="skill-tag">Usability Testing</span>
+              <span class="skill-tag">Design Systems</span>
+              <span class="skill-tag">Accessibility</span>
+              <span class="skill-tag">Visual Design</span>
+              <span class="skill-tag">Animation</span>
+              <span class="skill-tag">Mobile App Design</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Tools & AI Technology -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Design Tools & AI Workflows</h3>
+            </div>
+            <div class="skill-tags-wrap">
+              <span class="skill-tag">Figma & FigJam</span>
+              <span class="skill-tag">Adobe XD</span>
+              <span class="skill-tag">Photoshop & Illustrator</span>
+              <span class="skill-tag">Miro</span>
+              <span class="skill-tag">Framer</span>
+              <span class="skill-tag">Prompt Engineering</span>
+              <span class="skill-tag">AI-Assisted Ideation</span>
+              <span class="skill-tag">Component Libraries</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Front-End Development -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Front-End Development</h3>
+            </div>
+            <div class="skill-tags-wrap">
+              <span class="skill-tag">HTML5 & Semantic UI</span>
+              <span class="skill-tag">CSS3 & Animations</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Bootstrap</span>
+              <span class="skill-tag">Git & GitHub</span>
+              <!-- <span class="skill-tag">WordPress</span> -->
+              <span class="skill-tag">Developer Handoff</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. Timeline Section -->
+    <section id="timeline" class="timeline-section">
+      <div class="section-container">
+        
+        <div class="section-eyebrow-wrap">
+          <span class="section-dash"></span>
+          <span class="section-eyebrow">EXPERIENCE & TIMELINE</span>
+        </div>
+
+        <h2 class="section-heading-lg">Professional Journey</h2>
+
+        <div class="timeline-track">
+          
+          <!-- Milestone 1: Vision Bitz Techno Solutions -->
+          <div class="timeline-node">
+            <div class="node-marker">
+              <div class="node-dot"></div>
+            </div>
+            <div class="node-content">
+              <span class="node-date">Aug 2026 — Oct 2026</span>
+              <h3 class="node-title">UI/UX Designer & UI Developer Intern — Vision Bitz Techno Solutions</h3>
+              <p class="node-desc">
+                Served as the primary UI/UX designer & UI developer for Vision Bitz and partner company Pencilbitz. Designed three major products end-to-end in Figma: Vision Bitz 2.0 website, School ERP system, and Upzy Jobs mobile application. Created user flows, wireframes, high-fidelity prototypes, reusable design systems, and responsive layouts while utilizing AI-assisted workflows.
+              </p>
+            </div>
+          </div>
+
+          <!-- Milestone 2: Freelance UI/UX Designer -->
+          <div class="timeline-node">
+            <div class="node-marker">
+              <div class="node-dot"></div>
+            </div>
+            <div class="node-content">
+              <span class="node-date">Oct 2026 — Present</span>
+              <h3 class="node-title">Freelance UI/UX Designer — Independent</h3>
+              <p class="node-desc">
+                Designed a complete website for a chit fund company from initial structure through final UI design. Created website layouts, navigation structures, visual hierarchy, and designed a modern thrift-inspired e-commerce dress shop.
+              </p>
+            </div>
+          </div>
+
+          <!-- Milestone 3: Cognizant Technology Solutions -->
+          <div class="timeline-node">
+            <div class="node-marker">
+              <div class="node-dot"></div>
+            </div>
+            <div class="node-content">
+              <span class="node-date">Mar 2025 — Nov 2026</span>
+              <h3 class="node-title">Process Executive, Healthcare Operations — Cognizant</h3>
+              <p class="node-desc">
+                Processed and validated insurance claims in compliance-regulated healthcare environments. Developed deep domain knowledge in healthcare UX, enterprise applications, and clinical data-driven user experiences.
+              </p>
+            </div>
+          </div>
+
+          <!-- Milestone 4: IDM Tech Park -->
+          <div class="timeline-node">
+            <div class="node-marker">
+              <div class="node-dot"></div>
+            </div>
+            <div class="node-content">
+              <span class="node-date">Jan 2025 — May 2026</span>
+              <h3 class="node-title">UI/UX Designer (Projects) — IDM Tech Park</h3>
+              <p class="node-desc">
+                Led UX activities for VETSSREACH veterinary application focusing on user experience, navigation, and usability. Conducted UX evaluations, usability testing, and redesigned DigiYatra passenger onboarding and error flows for accessibility.
+              </p>
+            </div>
+          </div>
+
+          <!-- Milestone 5: B.Sc. IT Education -->
+          <div class="timeline-node">
+            <div class="node-marker">
+              <div class="node-dot"></div>
+            </div>
+            <div class="node-content">
+              <span class="node-date">2021 — 2024</span>
+              <h3 class="node-title">B.Sc. Information Technology — Sri Ramakrishna College </h3>
+              <p class="node-desc">
+                Graduated with First Class (80%) in Information Technology from Sri Ramakrishna College of Arts and Science, Coimbatore. The technical foundation bridging development teams and intuitive product design.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. "Get In Touch" / Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="section-container">
+        
+        <div class="contact-card">
+          <div class="section-eyebrow-wrap">
+            <span class="section-dash"></span>
+            <span class="section-eyebrow">GET IN TOUCH</span>
+          </div>
+
+          <h2 class="contact-heading">
+            Looking for a UI/UX Designer?<br />
+            <em>Let's create meaningful digital experiences together.</em>
+          </h2>
+
+          <div class="contact-buttons-wrap">
+            <a href="mailto:moulidharan81114@gmail.com" class="btn-pill btn-primary">
+              <span>Email me — moulidharan81114@gmail.com</span>
+              <span class="btn-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </a>
+
+            <a href="tel:+919345361942" class="btn-pill btn-ghost">
+              <span>+91 93453 61942</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/mouli-dharan-130886272/" target="_blank" rel="noopener" class="btn-pill btn-ghost">
+              <span>LinkedIn</span>
+            </a>
+
+            <a href="https://www.behance.net/shivamouliswar1" target="_blank" rel="noopener" class="btn-pill btn-ghost">
+              <span>Behance</span>
+            </a>
+
+            <a href="https://github.com/Moulidharan-30" target="_blank" rel="noopener" class="btn-pill btn-ghost">
+              <span>GitHub</span>
+            </a>
+          </div>
+
+          <div class="contact-card-footer">
+            <span class="footer-meta-left">Mouli Dharan H — UI/UX Designer & Product Designer · Coimbatore, India</span>
+            <span class="footer-meta-right">Designed & built by Mouli Dharan</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer Space -->
+    <footer class="footer-section">
+      <div class="section-container footer-container">
+        <div class="footer-brand">Mouli Dharan</div>
+        <p class="footer-copy">© Mouli Dharan · All rights reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
